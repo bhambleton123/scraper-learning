@@ -90,7 +90,7 @@ const scrapeAmazon = async (req, res) => {
 
   await avoidDetection(page);
 
-  await await page.goto(req.query.url);
+  await page.goto(req.query.url);
 
   const item = await page.evaluate(() => {
     let title = document
